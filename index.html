@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Special Design</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="settings-box">
+      <div class="gear-ico">
+        <i class="fa-solid fa-gear"></i>
+      </div>
+      <div class="site-settings">
+        <div class="options-box">
+          <h4>Colors</h4>
+          <ul class="colors">
+            <li data-color="#03a9f4" class="active"></li>
+            <li data-color="#9C27B0"></li>
+            <li data-color="#FF9800"></li>
+            <li data-color="#009688"></li>
+            <li data-color="#f44336"></li>
+          </ul>
+        </div>
+        <div class="options-box">
+          <h4>Random Background</h4>
+          <div class="bg-opts">
+            <span class="yes active" data-rand_bg="yes">Yes</span>
+            <span class="no" data-rand_bg="no">No</span>
+          </div>
+        </div>
+        <div class="options-box">
+          <h4>Show Bullets</h4>
+          <div class="bullets-opts">
+            <span class="yes active" data-bullets="block">Yes</span>
+            <span class="no" data-bullets="none">No</span>
+          </div>
+        </div>
+        <button class="reset-btn">Reset Options</button>
+      </div>
+    </div>
+    <ul class="nav-bullets">
+      <li class="bullet" data-section="our-skills">
+        <span class="tooltip">Skills</span>
+      </li>
+      <li class="bullet" data-section="gallery">
+        <span class="tooltip">Gallery</span>
+      </li>
+      <li class="bullet" data-section="timeline">
+        <span class="tooltip">Timeline</span>
+      </li>
+      <li class="bullet" data-section="features">
+        <span class="tooltip">Features</span>
+      </li>
+    </ul>
+    <div class="landing-page">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="header">
+          <div class="logo">Special Design</div>
+          <ul class="links">
+            <li>
+              <a href="#" data-section="landing-page" class="active">Home</a>
+            </li>
+            <li><a href="#" data-section="about-us">About</a></li>
+            <li><a href="#" data-section="our-skills">Skills</a></li>
+            <li><a href="#" data-section="gallery">Gallery</a></li>
+            <li><a href="#" data-section="timeline">Timeline</a></li>
+            <li><a href="#" data-section="features">Features</a></li>
+          </ul>
+          <div class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="intro-text">
+          <h1>We Are <span>Creative</span> Agency</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro error
+            deleniti labore officiis aut amet! Minima officiis aliquam ex enim.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="about-us">
+        <div class="about-text">
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero optio
+            nesciunt esse omnis molestiae ullam. Consequatur ullam amet minima
+            quae omnis, error reprehenderit, neque totam dicta quaerat soluta
+            eveniet iste.
+          </p>
+        </div>
+        <div class="about-img">
+          <img src="./imgs/about-us.svg" alt="about-us" />
+        </div>
+      </div>
+    </div>
+    <div class="our-skills">
+      <div class="container">
+        <h2>Our Skills</h2>
+        <div class="skill-box">
+          <div class="skill-name">HTML</div>
+          <div class="prog-bar">
+            <span class="done-prog" data-prog="85%"></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name">CSS</div>
+          <div class="prog-bar">
+            <span class="done-prog" data-prog="75%"></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name">JavaScript</div>
+          <div class="prog-bar">
+            <span class="done-prog" data-prog="70%"></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name">Python</div>
+          <div class="prog-bar">
+            <span class="done-prog" data-prog="90%"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gallery">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div class="gallery-imgs">
+          <!-- Future Alone Cyber-->
+          <img src="./imgs/img_0.jpg" alt="Your Name Anime" />
+          <img src="./imgs/img_1.jpg" alt="Get Lost" />
+          <img src="./imgs/img_2.jpg" alt="Demon Slayer" />
+          <img src="./imgs/img_3.jpg" alt="Cyberpunk 2077" />
+          <img src="./imgs/img_4.jpg" alt="Cyberpunk 2077" />
+          <img src="./imgs/img_5.jpg" alt="Cyberpunk 2077" />
+          <img src="./imgs/img_6.jpg" alt="Cyberpunk 2077" />
+          <img src="./imgs/img_7.jpg" alt="Engen Gas Station" />
+          <img src="./imgs/img_8.jpg" alt="Super Market Girl" />
+          <img src="./imgs/img_9.jpg" alt="Dodge Challenger" />
+        </div>
+      </div>
+    </div>
+    <div class="timeline">
+      <div class="container">
+        <div class="timeline-content">
+          <div class="year">2022</div>
+          <div class="left">
+            <h3>Heading</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Provident, sit quidem! Officiis molestias eaque excepturi ab
+              maxime qui eum odit!
+            </p>
+          </div>
+          <div class="right">
+            <h3>Heading</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Provident, sit quidem! Officiis molestias eaque excepturi ab
+              maxime qui eum odit!
+            </p>
+          </div>
+          <div class="year">2023</div>
+          <div class="left">
+            <h3>Heading</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Provident, sit quidem! Officiis molestias eaque excepturi ab
+              maxime qui eum odit!
+            </p>
+          </div>
+          <div class="right">
+            <h3>Heading</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Provident, sit quidem! Officiis molestias eaque excepturi ab
+              maxime qui eum odit!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="features">
+      <h2>Our Features</h2>
+      <div class="container">
+        <div class="feat-box">
+          <img src="./imgs/feat-dev.png" alt="development" />
+          <h4>Development</h4>
+          <p>Creating software applications, websites, or mobile apps.</p>
+        </div>
+        <div class="feat-box">
+          <img src="./imgs/feat-security.png" alt="security" />
+          <h4>Cyber Security</h4>
+          <p>
+            Protecting systems, networks, and data from unauthorized access.
+          </p>
+        </div>
+        <div class="feat-box">
+          <img src="./imgs/feat-data-scientist.png" alt="data-analysis" />
+          <h4>Data Analysis</h4>
+          <p>
+            Analyzing large amounts of data to identify patterns, trends, and
+            insights.
+          </p>
+        </div>
+        <div class="feat-box">
+          <img src="./imgs/feat-graphic.png" alt="graphic" />
+          <h4>Graphic Design</h4>
+          <p>
+            Creating visual content such as logos, brochures, posters, and
+            websites.
+          </p>
+        </div>
+        <div class="feat-box">
+          <img src="./imgs/feat-ads.png" alt="marketing" />
+          <h4>Marketing</h4>
+          <p>Promoting products or services to potential customers.</p>
+        </div>
+        <div class="feat-box">
+          <img src="./imgs/feat-vid-editing.png" alt="vid-editing" />
+          <h4>Video Editing</h4>
+          <p>Editing raw video footage into a finished product.</p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials">
+      <div class="container">
+        <h2>Testimonials</h2>
+        <div class="all-boxes">
+          <div class="ts-box">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+              rerum, illo ab et cum eum?
+            </p>
+            <div class="person-info">
+              <img src="https://via.placeholder.com/72/eee/000" />
+              <div>
+                <h4>John Doe</h4>
+                <span>CEO at Company</span>
+              </div>
+            </div>
+          </div>
+          <div class="ts-box">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+              rerum, illo ab et cum eum?
+            </p>
+            <div class="person-info">
+              <img src="https://via.placeholder.com/72/eee/000" />
+              <div>
+                <h4>John Doe</h4>
+                <span>CEO at Company</span>
+              </div>
+            </div>
+          </div>
+          <div class="ts-box">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+              rerum, illo ab et cum eum?
+            </p>
+            <div class="person-info">
+              <img src="https://via.placeholder.com/72/eee/000" />
+              <div>
+                <h4>John Doe</h4>
+                <span>CEO at Company</span>
+              </div>
+            </div>
+          </div>
+          <div class="ts-box">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+              rerum, illo ab et cum eum?
+            </p>
+            <div class="person-info">
+              <img src="https://via.placeholder.com/72/eee/000" />
+              <div>
+                <h4>John Doe</h4>
+                <span>CEO at Company</span>
+              </div>
+            </div>
+          </div>
+          <div class="ts-box">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+              rerum, illo ab et cum eum?
+            </p>
+            <div class="person-info">
+              <img src="https://via.placeholder.com/72/eee/000" />
+              <div>
+                <h4>John Doe</h4>
+                <span>CEO at Company</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-us">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form>
+          <div class="left">
+            <input type="text" placeholder="Your Name" />
+            <input type="tel" placeholder="Your Phone" />
+            <input type="email" placeholder="Your Email" />
+            <input type="text" placeholder="Subject" />
+          </div>
+          <div class="right">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      Created with <i class="fa-solid fa-heart"></i> By
+      <a href="https://github.com/Cu-da" target="_blank">Cuda</a> &copy; 2023
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
