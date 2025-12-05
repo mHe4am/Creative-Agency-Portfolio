@@ -12,6 +12,7 @@ if (currColor !== null) {
   });
 }
 
+// Random Background Option
 let randBg = true,
   theInterval;
 let randomBg = localStorage.getItem("random_bg");
@@ -29,6 +30,7 @@ if (randomBg !== null) {
   }
 }
 
+// Show Bullets Option
 let showBullets = localStorage.getItem("show_bullets");
 if (showBullets !== null) {
   document.querySelector(".nav-bullets").style.display = showBullets;
@@ -48,7 +50,7 @@ document.querySelector(".settings-box .gear-ico").onclick = function () {
   this.parentElement.classList.toggle("opened");
 };
 
-// Colors
+// Settings - Colors Options
 let colorsLis = document.querySelectorAll(".settings-box .colors li");
 
 colorsLis.forEach((li) => {
@@ -64,7 +66,7 @@ colorsLis.forEach((li) => {
   });
 });
 
-// Random Background
+// Settings - Random Background
 let bgSpans = document.querySelectorAll(".settings-box .bg-opts span");
 
 bgSpans.forEach((span) => {
@@ -83,7 +85,7 @@ bgSpans.forEach((span) => {
   });
 });
 
-// Nav Bullets
+// Settings - Nav Bullets
 let navBullets = document.querySelectorAll(".nav-bullets .bullet");
 
 scrollTo(navBullets);
@@ -100,7 +102,8 @@ function setRandomBg() {
   if (randBg === true) {
     theInterval = setInterval(() => {
       let randImg = imgsArr[Math.floor(Math.random() * imgsArr.length)];
-      landPage.style.backgroundImage = `url("../imgs/${randImg}")`;
+      // Use a path relative to the HTML document so GitHub Pages resolves images correctly
+      landPage.style.backgroundImage = `url("./imgs/${randImg}")`;
     }, 5000);
   }
 }
@@ -227,3 +230,6 @@ document.addEventListener("click", (e) => {
 menuContent.onclick = (e) => {
   e.stopPropagation();
 };
+
+// update copyright year
+document.getElementById("copyright-year").textContent = new Date().getFullYear();
